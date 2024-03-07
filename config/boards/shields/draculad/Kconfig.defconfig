@@ -49,9 +49,6 @@ config LVGL_DPI
 
 config LVGL_BITS_PER_PIXEL
     default 1
-
-endchoice
-
 endif # LVGL
 
 endif
