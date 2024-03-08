@@ -55,10 +55,10 @@ behaviors {
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
 //                         | ALT | LWR | SPC | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I       &kp SQT
-   &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                        &hplt NAV ESC  &kp SPACE &hplt NUM BSPC &mo 2  &kp RGUI
+   &kp TAB   &kp Q        &kp D         &kp R       &kp W       &kp B   &kp J &kp F       &kp U       &kp P         &kp SEMI    &kp BSPC
+   &kp LCTRL &hm LALT A   &hms LSHFT S  &hm LGUI H  &hm LCTRL T &kp G   &kp Y &hm RCTRL N &hm LGUI E  &hms RSHFT O  &hm LALT I  &kp SQT
+   &kp LSHFT &kp Z        &kp X         &kp M       &kp C       &kp V   &kp K &kp L       &kp COMMA   &kp DOT       &kp FSLH    &mt RSHFT RET
+                                    &hplt NAV ESC  &kp SPACE &hplt NUM BSPC &mo 2  &kp RGUI
                         >;
                 };
                 NAV {
