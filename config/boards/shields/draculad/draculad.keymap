@@ -15,7 +15,7 @@
 #define FKEYS 3
 #define FKEYS2 4
 #define GAME 5
-#define STENO 6
+#define SMASH 6
 
 /{ 
     behaviors { 
@@ -81,8 +81,8 @@
            bindings = <
             &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                             &kp F6      &kp F7      &kp F8      &kp F9      &kp F10   
             &kp F11     &kp F12     &none       &none       &none                              &none       &none       &none       &none       &none     
-            &none       &none       &none       &kp F17     &none     &tog STENO     &none     &none       &none       &none       &none       &none   
-                                    &none       &none       &none                              &none       &none       &none
+            &none       &none       &none       &kp F17     &none     &tog SMASH     &none     &none       &none       &none       &none       &none   
+                                    &none       &kp F       &none                              &none       &none       &none
             >;
         };
 
@@ -104,14 +104,13 @@
             >;
         };
 
-        STENO {
-          bindings = <
-            &kp Q       &kp D       &kp R       &kp W       &kp B                              &kp J       &kp F       &kp U       &kp P       &kp SEMI 
-            &kp Q       &kp W       &kp E       &kp R       &kp T                              &kp U       &kp I       &kp O       &kp P       &kp LBKT
-            &kp A       &kp S       &kp D       &kp F       &kp G  &tog STENO    &bt BT_SEL 1  &kp J       &kp K       &kp L       &kp SEMI    &kp DOT      
-                                    &kp C       &kp V       &kp X                              &mo FKEYS2  &kp N       &kp M
+        SMASH {
+           bindings = <
+            &kp Q       &kp D       &kp W       &kp R       &kp J                              &none       &none       &none       &none       &none    
+            &kp TAB     &kp A       &kp S       &kp D       &kp ESC                            &none       &kp X       &kp B       &none       &none     
+            &kp Z       &kp X       &kp M       &kp C       &kp V     &tog SMASH         &none &none       &none       &none       &none       &none   
+                                    &kp LALT    &kp SPACE   &kp LCTRL                          &none       &kp SPACE   &none
             >;
-          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp F24 F24>;
         };
 
     };
