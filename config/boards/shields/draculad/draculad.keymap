@@ -107,7 +107,7 @@
         SMASH {
            bindings = <
             &kp Q       &kp D       &kp W       &kp R       &kp J                              &none       &none       &none       &none       &none    
-            &kp TAB     &kp A       &kp S       &kp D       &kp ESC                            &none       &kp X       &kp B       &none       &none     
+            &kp F       &kp A       &kp S       &kp D       &kp G                              &none       &kp N       &kp E       &kp O       &kp I     
             &kp Z       &kp X       &kp M       &kp C       &kp V     &tog SMASH         &none &none       &none       &none       &none       &none   
                                     &kp LALT    &kp SPACE   &kp LCTRL                          &none       &kp SPACE   &none
             >;
