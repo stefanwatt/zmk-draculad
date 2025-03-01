@@ -53,12 +53,12 @@ behaviors {
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
-//                         | ALT | LWR | SPC | RSE  | ALT |
+//                         | NAV | SPACE | NUM |
                         bindings = <
    &kp TAB   &kp Q        &kp D         &kp R       &kp W       &kp B   &kp J &kp F       &kp U       &kp P         &kp SEMI    &hplt FKEYS ESC  
    &kp LCTRL &hm LALT A   &hms LSHFT S  &hm LGUI H  &hm LCTRL T &kp G   &kp Y &hm RCTRL N &hm LGUI E  &hms RSHFT O  &hm LALT I  &kp SQT
    &kp LSHFT &kp Z        &kp X         &kp M       &kp C       &kp V   &kp K &kp L       &kp COMMA   &kp DOT       &kp FSLH    &mt RSHFT RET
-                                    &hplt NAV ESC  &kp SPACE &hplt NUM BSPC &mo 2  &kp RGUI
+                                         &hplt NAV ESC &kp SPACE &hplt NUM BSPC
                         >;
                 };
                 NAV {
@@ -66,12 +66,12 @@ behaviors {
 // |    |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      DEL    |
 // |    |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN |  UP | RGT |  `  |       ~     |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | HOME| END | PGUP| PGDN| PRSC| SHFT(SPACE) |
-//                       |     |     | RET | ADJ |     |
+//                       | NAV | SPACE | FKEYS |
                         bindings = <
    &none &none       &none       &kp UP      &none       &none          &none      &kp LBKT &kp RBKT   &kp SQT   &kp GRAVE &kp DEL
    &none &kp TAB     &kp LEFT    &kp DOWN    &kp RIGHT   &kp G          &none      &kp GT   &kp EQUAL  &kp RPAR  &kp LPAR  &kp TILDE
    &none &kp CARET   &kp DLLR    &kp LBRC    &kp RBRC    &none          &none      &kp AMPS  &kp EXCL  &kp PIPE  &kp BSLH  &none
-                                 &none      &none       &kp RET        &mo 3       &none
+                                         &none &kp RET &mo FKEYS
                         >;
                 };
 
@@ -80,12 +80,12 @@ behaviors {
 // |    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL |
 // |    |  -  |  =  |  [  |  ]  |  \  |   | F1  | F2  | F3  | F4  | F5  | F6  |
 // |    | ESC | GUI | ALT | CAPS|  "  |   | F7  | F8  | F9  | F10 | F11 | F12 |
-//                       |     | ADJ | BKSP |    |     |
+//                       | RET | NONE | NONE |
                         bindings = <
    &none  &none     &kp N7    &kp N8    &kp N9        &none         &kp N6    &kp AT    &kp HASH   &kp TILDE   &kp N0    &kp DEL
    &none  &none     &kp N4    &kp N5    &kp N6        &kp BSLH      &kp F1    &kp PLUS  &kp MINUS  &kp STAR    &kp PRCNT &kp F6
    &none  &kp N0    &kp N1    &kp N2    &kp N3        &kp DQT       &kp F7    &kp F8    &kp F9     &kp F10     &kp F11   &kp F12
-                                &kp RET      &none       &none        &none     &none
+                                         &kp RET &none &none
                         >;
                 };
 
@@ -94,12 +94,12 @@ behaviors {
 // | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
 // | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    |         |   |       |     |     |     |     |        |
 // |          |          |          |          |    |         |   | RESET |     |     |     |     |        |
-//                                              |     |     |     |     |     |
+//                                  | NONE | NONE | TOG FKEYS |
                         bindings = <
    &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &rgb_ug RGB_TOG    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
    &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none              &none        &none        &none        &none        &none        &none
    &none           &none           &none           &none           &none &none              &sys_reset       &none        &none        &none        &none        &none
-                                                             &none      &none       &tog 3        &none      &none
+                                         &none &none &tog FKEYS
                         >;
                 };
         };
